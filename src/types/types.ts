@@ -53,3 +53,7 @@ export interface ImageGalleryProps {
   imagesData: UnsplashPhoto[];
   showModal: (img: UnsplashPhoto) => void;
 }
+
+export interface LoadMoreBtnProps {
+  onLoadMore: () => void;
+}
