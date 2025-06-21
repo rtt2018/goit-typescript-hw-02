@@ -1,7 +1,8 @@
 import styles from './ImageGallery.module.css';
 import ImageCard from '../ImageCard/ImageCard';
+import { ImageGalleryProps } from '../../types/types';
 
-export default function ImageGallery({ imagesData, showModal }: { imagesData: Array<any>, showModal: (imgData: any) => void }) {
+export default function ImageGallery({ imagesData, showModal }: ImageGalleryProps) {
   return (
     <>
       <ul className={styles.container}>

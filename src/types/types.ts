@@ -1,7 +1,7 @@
 export interface UnsplashPhoto {
   id: string;
   description: string | null;
-  alt_description: string | undefined;
+  alt_description: string;
   urls: {
     raw: string;
     full: string;
@@ -47,4 +47,9 @@ export interface ImageModalProps {
   onClose: () => void;
   currentImg: UnsplashPhoto | null;
   isOpen: boolean;
+}
+
+export interface ImageGalleryProps {
+  imagesData: UnsplashPhoto[];
+  showModal: (img: UnsplashPhoto) => void;
 }

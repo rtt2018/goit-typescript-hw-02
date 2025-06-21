@@ -20,10 +20,10 @@ function App() {
   const [error, setError] = useState<boolean>(false);
   const [pageNumber, setPageNumber] = useState<number>(1);
   const [modalVisible, setModalVisible] = useState<boolean>(false);
-  const [currentShowImg, setCurrentShowImg] = useState<string | null>(null);
+  const [currentShowImg, setCurrentShowImg] = useState<UnsplashPhoto | null>(null);
   const [zeroResult, setZeroResult] = useState<boolean>(false);
 
-  const showModal = (imgId: string): void => {
+  const showModal = (imgId: UnsplashPhoto): void => {
     setCurrentShowImg(imgId);
     setModalVisible(true);
   }
